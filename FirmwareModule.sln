@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A1902AB9-5394-45F2-857A-12824213EEFB", "A1902AB9-5394-45F2-857A-12824213EEFB\A1902AB9-5394-45F2-857A-12824213EEFB.vcxproj", "{B7FF224C-B82F-4251-8436-E239A56C89D1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LicenseData", "LicenseData\LicenseData.vcxproj", "{4F7D7183-BD75-4058-8A14-9AABEEBD3A26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{63326D70-4303-4062-8889-8DC241C22977}"
+	ProjectSection(SolutionItems) = preProject
+		clean.cmd = clean.cmd
+		Bin\GenDepex.exe = Bin\GenDepex.exe
+		Bin\GenFfs.exe = Bin\GenFfs.exe
+		Bin\GenFw.exe = Bin\GenFw.exe
+		Bin\GenSec.exe = Bin\GenSec.exe
+		Bin\python25.dll = Bin\python25.dll
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7FF224C-B82F-4251-8436-E239A56C89D1}.Release|Win32.ActiveCfg = Release|x64
+		{B7FF224C-B82F-4251-8436-E239A56C89D1}.Release|Win32.Build.0 = Release|x64
+		{4F7D7183-BD75-4058-8A14-9AABEEBD3A26}.Release|Win32.ActiveCfg = Release|Win32
+		{4F7D7183-BD75-4058-8A14-9AABEEBD3A26}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

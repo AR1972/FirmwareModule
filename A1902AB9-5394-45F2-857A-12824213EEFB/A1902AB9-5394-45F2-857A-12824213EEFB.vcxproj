@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B7FF224C-B82F-4251-8436-E239A56C89D1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>A1902AB9539445F2857A12824213EEFB</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>
+    </LinkIncremental>
+    <ReferencePath />
+    <LibraryPath />
+    <SourcePath />
+    <ExcludePath />
+    <IncludePath>$(ProjectDir)Include;$(ProjectDir)Include\X64;$(ProjectDir)Include\Protocol</IncludePath>
+    <TargetExt>.ROM</TargetExt>
+    <GenerateManifest />
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>TEMP</TargetName>
+    <ExtensionsToDeleteOnClean>*.ROM;*.BIN;*.TXT;*.CMD;*.LOG;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <ExecutablePath>$(SolutionDir)Bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>
+      </RuntimeLibrary>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <CompileAs>CompileAsC</CompileAs>
+      <ErrorReporting>
+      </ErrorReporting>
+      <OmitDefaultLibName>true</OmitDefaultLibName>
+      <CallingConvention>StdCall</CallingConvention>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <StringPooling>
+      </StringPooling>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <EnableFiberSafeOptimizations>
+      </EnableFiberSafeOptimizations>
+      <SmallerTypeCheck>
+      </SmallerTypeCheck>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <StructMemberAlignment>
+      </StructMemberAlignment>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <DisableLanguageExtensions>
+      </DisableLanguageExtensions>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>
+      </BrowseInformationFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>EFI Boot Service Driver</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <ManifestFile>
+      </ManifestFile>
+      <AllowIsolation>
+      </AllowIsolation>
+      <EnableUAC>
+      </EnableUAC>
+      <UACExecutionLevel>
+      </UACExecutionLevel>
+      <UACUIAccess>
+      </UACUIAccess>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <GenerateMapFile>
+      </GenerateMapFile>
+      <MapExports>
+      </MapExports>
+      <EntryPointSymbol>ModuleEntryPoint</EntryPointSymbol>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
+      <NoEntryPoint>
+      </NoEntryPoint>
+      <SetChecksum>true</SetChecksum>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TurnOffAssemblyGeneration>
+      </TurnOffAssemblyGeneration>
+      <Profile>
+      </Profile>
+      <CLRImageType>
+      </CLRImageType>
+      <IgnoreEmbeddedIDL>
+      </IgnoreEmbeddedIDL>
+      <TypeLibraryResourceID>
+      </TypeLibraryResourceID>
+      <ProfileGuidedDatabase>
+      </ProfileGuidedDatabase>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <SectionAlignment>32</SectionAlignment>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>GenFw.exe -e BS_DRIVER "$(ProjectDir)TEMP.ROM" -o "$(ProjectDir)TEMP.ROM"
+GenSec.exe -s EFI_SECTION_PE32 "$(ProjectDir)TEMP.ROM" -o "$(ProjectDir)TEMP.ROM"
+GenSec.exe -s EFI_SECTION_USER_INTERFACE -n "MSOA" -o "$(ProjectDir)ui.sec"
+GenDepex.exe -t DXE_DRIVER -o "$(ProjectDir)depex.bin" "$(ProjectDir)depex.txt"
+GenSec.exe -s EFI_SECTION_DXE_DEPEX "$(ProjectDir)depex.bin" -o "$(ProjectDir)depex.sec"
+GenSec.exe -s EFI_SECTION_COMPRESSION -c PI_STD "$(ProjectDir)TEMP.ROM" "$(ProjectDir)ui.sec" -o "$(ProjectDir)TEMP.ROM"
+GenFfs.exe -t EFI_FV_FILETYPE_DRIVER -g A1902AB9-5394-45F2-857A-12824213EEFB -s -o "$(SolutionDir)$(Configuration)\A1902AB9-5394-45F2-857A-12824213EEFB.ROM" -i "$(ProjectDir)depex.sec" -i "$(ProjectDir)TEMP.ROM"
+DEL /Q /F "$(ProjectDir)depex.sec"
+DEL /Q /F "$(ProjectDir)ui.sec"
+DEL /Q /F "$(ProjectDir)depex.bin"
+DEL /Q /F "$(ProjectDir)TEMP.ROM"
+
+
+
+
+</Command>
+      <Message>make compressed ffs</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Arm\ProcessorBind.h" />
+    <ClInclude Include="Include\Base.h" />
+    <ClInclude Include="Include\Ebc\ProcessorBind.h" />
+    <ClInclude Include="Include\Guid\Acpi.h" />
+    <ClInclude Include="Include\Guid\Apriori.h" />
+    <ClInclude Include="Include\Guid\AprioriFileName.h" />
+    <ClInclude Include="Include\Guid\Cper.h" />
+    <ClInclude Include="Include\Guid\DebugImageInfoTable.h" />
+    <ClInclude Include="Include\Guid\DxeServices.h" />
+    <ClInclude Include="Include\Guid\EventGroup.h" />
+    <ClInclude Include="Include\Guid\EventLegacyBios.h" />
+    <ClInclude Include="Include\Guid\FileInfo.h" />
+    <ClInclude Include="Include\Guid\FileSystemInfo.h" />
+    <ClInclude Include="Include\Guid\FileSystemVolumeLabelInfo.h" />
+    <ClInclude Include="Include\Guid\FirmwareFileSystem2.h" />
+    <ClInclude Include="Include\Guid\FirmwareFileSystem3.h" />
+    <ClInclude Include="Include\Guid\GlobalVariable.h" />
+    <ClInclude Include="Include\Guid\Gpt.h" />
+    <ClInclude Include="Include\Guid\HardwareErrorVariable.h" />
+    <ClInclude Include="Include\Guid\HiiFormMapMethodGuid.h" />
+    <ClInclude Include="Include\Guid\HiiKeyBoardLayout.h" />
+    <ClInclude Include="Include\Guid\HiiPlatformSetupFormset.h" />
+    <ClInclude Include="Include\Guid\HobList.h" />
+    <ClInclude Include="Include\Guid\ImageAuthentication.h" />
+    <ClInclude Include="Include\Guid\MdePkgTokenSpace.h" />
+    <ClInclude Include="Include\Guid\MemoryAllocationHob.h" />
+    <ClInclude Include="Include\Guid\MemoryOverwriteControl.h" />
+    <ClInclude Include="Include\Guid\Mps.h" />
+    <ClInclude Include="Include\Guid\PcAnsi.h" />
+    <ClInclude Include="Include\Guid\SalSystemTable.h" />
+    <ClInclude Include="Include\Guid\SmBios.h" />
+    <ClInclude Include="Include\Guid\StatusCodeDataTypeId.h" />
+    <ClInclude Include="Include\Guid\WinCertificate.h" />
+    <ClInclude Include="Include\Ia32\ProcessorBind.h" />
+    <ClInclude Include="Include\IndustryStandard\Acpi.h" />
+    <ClInclude Include="Include\IndustryStandard\Acpi10.h" />
+    <ClInclude Include="Include\IndustryStandard\Acpi20.h" />
+    <ClInclude Include="Include\IndustryStandard\Acpi30.h" />
+    <ClInclude Include="Include\IndustryStandard\Acpi40.h" />
+    <ClInclude Include="Include\IndustryStandard\Acpi50.h" />
+    <ClInclude Include="Include\IndustryStandard\AcpiAml.h" />
+    <ClInclude Include="Include\IndustryStandard\AlertStandardFormatTable.h" />
+    <ClInclude Include="Include\IndustryStandard\Atapi.h" />
+    <ClInclude Include="Include\IndustryStandard\Bmp.h" />
+    <ClInclude Include="Include\IndustryStandard\ElTorito.h" />
+    <ClInclude Include="Include\IndustryStandard\HighPrecisionEventTimerTable.h" />
+    <ClInclude Include="Include\IndustryStandard\IScsiBootFirmwareTable.h" />
+    <ClInclude Include="Include\IndustryStandard\LegacyBiosMpTable.h" />
+    <ClInclude Include="Include\IndustryStandard\Mbr.h" />
+    <ClInclude Include="Include\IndustryStandard\MemoryMappedConfigurationSpaceAccessTable.h" />
+    <ClInclude Include="Include\IndustryStandard\Pal.h" />
+    <ClInclude Include="Include\IndustryStandard\Pci.h" />
+    <ClInclude Include="Include\IndustryStandard\Pci22.h" />
+    <ClInclude Include="Include\IndustryStandard\Pci23.h" />
+    <ClInclude Include="Include\IndustryStandard\Pci30.h" />
+    <ClInclude Include="Include\IndustryStandard\PciExpress21.h" />
+    <ClInclude Include="Include\IndustryStandard\PeImage.h" />
+    <ClInclude Include="Include\IndustryStandard\Sal.h" />
+    <ClInclude Include="Include\IndustryStandard\Scsi.h" />
+    <ClInclude Include="Include\IndustryStandard\SdramSpd.h" />
+    <ClInclude Include="Include\IndustryStandard\SerialPortConsoleRedirectionTable.h" />
+    <ClInclude Include="Include\IndustryStandard\SmBios.h" />
+    <ClInclude Include="Include\IndustryStandard\SmBus.h" />
+    <ClInclude Include="Include\IndustryStandard\Tpm12.h" />
+    <ClInclude Include="Include\IndustryStandard\UefiTcgPlatform.h" />
+    <ClInclude Include="Include\IndustryStandard\Usb.h" />
+    <ClInclude Include="Include\IndustryStandard\WatchdogActionTable.h" />
+    <ClInclude Include="Include\IndustryStandard\WatchdogResourceTable.h" />
+    <ClInclude Include="Include\Ipf\ProcessorBind.h" />
+    <ClInclude Include="Include\Library\BaseLib.h" />
+    <ClInclude Include="Include\Library\BaseMemoryLib.h" />
+    <ClInclude Include="Include\Library\CacheMaintenanceLib.h" />
+    <ClInclude Include="Include\Library\CpuLib.h" />
+    <ClInclude Include="Include\Library\DebugLib.h" />
+    <ClInclude Include="Include\Library\DebugPrintErrorLevelLib.h" />
+    <ClInclude Include="Include\Library\DevicePathLib.h" />
+    <ClInclude Include="Include\Library\DxeCoreEntryPoint.h" />
+    <ClInclude Include="Include\Library\DxeServicesLib.h" />
+    <ClInclude Include="Include\Library\DxeServicesTableLib.h" />
+    <ClInclude Include="Include\Library\ExtendedSalLib.h" />
+    <ClInclude Include="Include\Library\ExtractGuidedSectionLib.h" />
+    <ClInclude Include="Include\Library\HobLib.h" />
+    <ClInclude Include="Include\Library\IoLib.h" />
+    <ClInclude Include="Include\Library\MemoryAllocationLib.h" />
+    <ClInclude Include="Include\Library\PalLib.h" />
+    <ClInclude Include="Include\Library\PcdLib.h" />
+    <ClInclude Include="Include\Library\PciCf8Lib.h" />
+    <ClInclude Include="Include\Library\PciExpressLib.h" />
+    <ClInclude Include="Include\Library\PciLib.h" />
+    <ClInclude Include="Include\Library\PciSegmentLib.h" />
+    <ClInclude Include="Include\Library\PeCoffExtraActionLib.h" />
+    <ClInclude Include="Include\Library\PeCoffGetEntryPointLib.h" />
+    <ClInclude Include="Include\Library\PeCoffLib.h" />
+    <ClInclude Include="Include\Library\PeiCoreEntryPoint.h" />
+    <ClInclude Include="Include\Library\PeimEntryPoint.h" />
+    <ClInclude Include="Include\Library\PeiServicesLib.h" />
+    <ClInclude Include="Include\Library\PeiServicesTablePointerLib.h" />
+    <ClInclude Include="Include\Library\PerformanceLib.h" />
+    <ClInclude Include="Include\Library\PostCodeLib.h" />
+    <ClInclude Include="Include\Library\PrintLib.h" />
+    <ClInclude Include="Include\Library\ReportStatusCodeLib.h" />
+    <ClInclude Include="Include\Library\ResourcePublicationLib.h" />
+    <ClInclude Include="Include\Library\S3BootScriptLib.h" />
+    <ClInclude Include="Include\Library\S3IoLib.h" />
+    <ClInclude Include="Include\Library\S3PciLib.h" />
+    <ClInclude Include="Include\Library\S3SmbusLib.h" />
+    <ClInclude Include="Include\Library\S3StallLib.h" />
+    <ClInclude Include="Include\Library\SalLib.h" />
+    <ClInclude Include="Include\Library\SerialPortLib.h" />
+    <ClInclude Include="Include\Library\SmbusLib.h" />
+    <ClInclude Include="Include\Library\SmmLib.h" />
+    <ClInclude Include="Include\Library\SmmPeriodicSmiLib.h" />
+    <ClInclude Include="Include\Library\SmmServicesTableLib.h" />
+    <ClInclude Include="Include\Library\SynchronizationLib.h" />
+    <ClInclude Include="Include\Library\TimerLib.h" />
+    <ClInclude Include="Include\Library\UefiApplicationEntryPoint.h" />
+    <ClInclude Include="Include\Library\UefiBootServicesTableLib.h" />
+    <ClInclude Include="Include\Library\UefiDecompressLib.h" />
+    <ClInclude Include="Include\Library\UefiDriverEntryPoint.h" />
+    <ClInclude Include="Include\Library\UefiLib.h" />
+    <ClInclude Include="Include\Library\UefiRuntimeLib.h" />
+    <ClInclude Include="Include\Library\UefiRuntimeServicesTableLib.h" />
+    <ClInclude Include="Include\Library\UefiScsiLib.h" />
+    <ClInclude Include="Include\Library\UefiUsbLib.h" />
+    <ClInclude Include="Include\PiDxe.h" />
+    <ClInclude Include="Include\PiPei.h" />
+    <ClInclude Include="Include\PiSmm.h" />
+    <ClInclude Include="Include\Pi\PiBootMode.h" />
+    <ClInclude Include="Include\Pi\PiDependency.h" />
+    <ClInclude Include="Include\Pi\PiDxeCis.h" />
+    <ClInclude Include="Include\Pi\PiFirmwareFile.h" />
+    <ClInclude Include="Include\Pi\PiFirmwareVolume.h" />
+    <ClInclude Include="Include\Pi\PiHob.h" />
+    <ClInclude Include="Include\Pi\PiMultiPhase.h" />
+    <ClInclude Include="Include\Pi\PiPeiCis.h" />
+    <ClInclude Include="Include\Pi\PiS3BootScript.h" />
+    <ClInclude Include="Include\Pi\PiSmmCis.h" />
+    <ClInclude Include="Include\Pi\PiSmmCommunicationAcpiTable.h" />
+    <ClInclude Include="Include\Pi\PiStatusCode.h" />
+    <ClInclude Include="Include\Ppi\BlockIo.h" />
+    <ClInclude Include="Include\Ppi\BootInRecoveryMode.h" />
+    <ClInclude Include="Include\Ppi\CpuIo.h" />
+    <ClInclude Include="Include\Ppi\Decompress.h" />
+    <ClInclude Include="Include\Ppi\DeviceRecoveryModule.h" />
+    <ClInclude Include="Include\Ppi\DxeIpl.h" />
+    <ClInclude Include="Include\Ppi\EndOfPeiPhase.h" />
+    <ClInclude Include="Include\Ppi\FirmwareVolume.h" />
+    <ClInclude Include="Include\Ppi\FirmwareVolumeInfo.h" />
+    <ClInclude Include="Include\Ppi\GuidedSectionExtraction.h" />
+    <ClInclude Include="Include\Ppi\LoadFile.h" />
+    <ClInclude Include="Include\Ppi\LoadImage.h" />
+    <ClInclude Include="Include\Ppi\MasterBootMode.h" />
+    <ClInclude Include="Include\Ppi\MemoryDiscovered.h" />
+    <ClInclude Include="Include\Ppi\Pcd.h" />
+    <ClInclude Include="Include\Ppi\PciCfg2.h" />
+    <ClInclude Include="Include\Ppi\PiPcd.h" />
+    <ClInclude Include="Include\Ppi\ReadOnlyVariable2.h" />
+    <ClInclude Include="Include\Ppi\RecoveryModule.h" />
+    <ClInclude Include="Include\Ppi\ReportStatusCodeHandler.h" />
+    <ClInclude Include="Include\Ppi\Reset.h" />
+    <ClInclude Include="Include\Ppi\S3Resume2.h" />
+    <ClInclude Include="Include\Ppi\SecPlatformInformation.h" />
+    <ClInclude Include="Include\Ppi\Security2.h" />
+    <ClInclude Include="Include\Ppi\Smbus2.h" />
+    <ClInclude Include="Include\Ppi\Stall.h" />
+    <ClInclude Include="Include\Ppi\StatusCode.h" />
+    <ClInclude Include="Include\Ppi\TemporaryRamSupport.h" />
+    <ClInclude Include="Include\Protocol\AbsolutePointer.h" />
+    <ClInclude Include="Include\Protocol\AcpiS3Save.h" />
+    <ClInclude Include="Include\Protocol\AcpiSupport.h" />
+    <ClInclude Include="Include\Protocol\AcpiSystemDescriptionTable.h" />
+    <ClInclude Include="Include\Protocol\AcpiTable.h" />
+    <ClInclude Include="Include\Protocol\Arp.h" />
+    <ClInclude Include="Include\Protocol\AtaPassThru.h" />
+    <ClInclude Include="Include\Protocol\AuthenticationInfo.h" />
+    <ClInclude Include="Include\Protocol\Bds.h" />
+    <ClInclude Include="Include\Protocol\Bis.h" />
+    <ClInclude Include="Include\Protocol\BlockIo.h" />
+    <ClInclude Include="Include\Protocol\BlockIo2.h" />
+    <ClInclude Include="Include\Protocol\BootScriptSave.h" />
+    <ClInclude Include="Include\Protocol\BusSpecificDriverOverride.h" />
+    <ClInclude Include="Include\Protocol\Capsule.h" />
+    <ClInclude Include="Include\Protocol\ComponentName.h" />
+    <ClInclude Include="Include\Protocol\ComponentName2.h" />
+    <ClInclude Include="Include\Protocol\Cpu.h" />
+    <ClInclude Include="Include\Protocol\CpuIo.h" />
+    <ClInclude Include="Include\Protocol\CpuIo2.h" />
+    <ClInclude Include="Include\Protocol\DataHub.h" />
+    <ClInclude Include="Include\Protocol\DebugPort.h" />
+    <ClInclude Include="Include\Protocol\DebugSupport.h" />
+    <ClInclude Include="Include\Protocol\Decompress.h" />
+    <ClInclude Include="Include\Protocol\DeferredImageLoad.h" />
+    <ClInclude Include="Include\Protocol\DeviceIo.h" />
+    <ClInclude Include="Include\Protocol\DevicePath.h" />
+    <ClInclude Include="Include\Protocol\DevicePathFromText.h" />
+    <ClInclude Include="Include\Protocol\DevicePathToText.h" />
+    <ClInclude Include="Include\Protocol\DevicePathUtilities.h" />
+    <ClInclude Include="Include\Protocol\Dhcp4.h" />
+    <ClInclude Include="Include\Protocol\Dhcp6.h" />
+    <ClInclude Include="Include\Protocol\DiskInfo.h" />
+    <ClInclude Include="Include\Protocol\DiskIo.h" />
+    <ClInclude Include="Include\Protocol\DriverBinding.h" />
+    <ClInclude Include="Include\Protocol\DriverConfiguration.h" />
+    <ClInclude Include="Include\Protocol\DriverConfiguration2.h" />
+    <ClInclude Include="Include\Protocol\DriverDiagnostics.h" />
+    <ClInclude Include="Include\Protocol\DriverDiagnostics2.h" />
+    <ClInclude Include="Include\Protocol\DriverFamilyOverride.h" />
+    <ClInclude Include="Include\Protocol\DriverHealth.h" />
+    <ClInclude Include="Include\Protocol\DriverSupportedEfiVersion.h" />
+    <ClInclude Include="Include\Protocol\DxeSmmReadyToLock.h" />
+    <ClInclude Include="Include\Protocol\Eap.h" />
+    <ClInclude Include="Include\Protocol\EapManagement.h" />
+    <ClInclude Include="Include\Protocol\Ebc.h" />
+    <ClInclude Include="Include\Protocol\EdidActive.h" />
+    <ClInclude Include="Include\Protocol\EdidDiscovered.h" />
+    <ClInclude Include="Include\Protocol\EdidOverride.h" />
+    <ClInclude Include="Include\Protocol\ExtendedSalBootService.h" />
+    <ClInclude Include="Include\Protocol\ExtendedSalServiceClasses.h" />
+    <ClInclude Include="Include\Protocol\FirmwareManagement.h" />
+    <ClInclude Include="Include\Protocol\FirmwareVolume.h" />
+    <ClInclude Include="Include\Protocol\FirmwareVolume2.h" />
+    <ClInclude Include="Include\Protocol\FirmwareVolumeBlock.h" />
+    <ClInclude Include="Include\Protocol\FormBrowser2.h" />
+    <ClInclude Include="Include\Protocol\FrameworkFirmwareVolumeBlock.h" />
+    <ClInclude Include="Include\Protocol\FrameworkFormBrowser.h" />
+    <ClInclude Include="Include\Protocol\FrameworkFormCallback.h" />
+    <ClInclude Include="Include\Protocol\FrameworkHii.h" />
+    <ClInclude Include="Include\Protocol\FrameworkMpService.h" />
+    <ClInclude Include="Include\Protocol\Ftp4.h" />
+    <ClInclude Include="Include\Protocol\GraphicsOutput.h" />
+    <ClInclude Include="Include\Protocol\GuidedSectionExtraction.h" />
+    <ClInclude Include="Include\Protocol\Hash.h" />
+    <ClInclude Include="Include\Protocol\HiiConfigAccess.h" />
+    <ClInclude Include="Include\Protocol\HiiConfigRouting.h" />
+    <ClInclude Include="Include\Protocol\HiiDatabase.h" />
+    <ClInclude Include="Include\Protocol\HiiFont.h" />
+    <ClInclude Include="Include\Protocol\HiiImage.h" />
+    <ClInclude Include="Include\Protocol\HiiPackageList.h" />
+    <ClInclude Include="Include\Protocol\HiiString.h" />
+    <ClInclude Include="Include\Protocol\IdeControllerInit.h" />
+    <ClInclude Include="Include\Protocol\IncompatiblePciDeviceSupport.h" />
+    <ClInclude Include="Include\Protocol\Ip4.h" />
+    <ClInclude Include="Include\Protocol\Ip4Config.h" />
+    <ClInclude Include="Include\Protocol\Ip6.h" />
+    <ClInclude Include="Include\Protocol\Ip6Config.h" />
+    <ClInclude Include="Include\Protocol\IpSec.h" />
+    <ClInclude Include="Include\Protocol\IpSecConfig.h" />
+    <ClInclude Include="Include\Protocol\IScsiInitiatorName.h" />
+    <ClInclude Include="Include\Protocol\Kms.h" />
+    <ClInclude Include="Include\Protocol\Legacy8259.h" />
+    <ClInclude Include="Include\Protocol\LegacyBios.h" />
+    <ClInclude Include="Include\Protocol\LegacyBiosPlatform.h" />
+    <ClInclude Include="Include\Protocol\LegacyInterrupt.h" />
+    <ClInclude Include="Include\Protocol\LegacyRegion.h" />
+    <ClInclude Include="Include\Protocol\LegacyRegion2.h" />
+    <ClInclude Include="Include\Protocol\LoadedImage.h" />
+    <ClInclude Include="Include\Protocol\LoadFile.h" />
+    <ClInclude Include="Include\Protocol\LoadFile2.h" />
+    <ClInclude Include="Include\Protocol\ManagedNetwork.h" />
+    <ClInclude Include="Include\Protocol\McaInitPmi.h" />
+    <ClInclude Include="Include\Protocol\Metronome.h" />
+    <ClInclude Include="Include\Protocol\MonotonicCounter.h" />
+    <ClInclude Include="Include\Protocol\MpService.h" />
+    <ClInclude Include="Include\Protocol\Mtftp4.h" />
+    <ClInclude Include="Include\Protocol\Mtftp6.h" />
+    <ClInclude Include="Include\Protocol\NetworkInterfaceIdentifier.h" />
+    <ClInclude Include="Include\Protocol\Pcd.h" />
+    <ClInclude Include="Include\Protocol\PciEnumerationComplete.h" />
+    <ClInclude Include="Include\Protocol\PciHostBridgeResourceAllocation.h" />
+    <ClInclude Include="Include\Protocol\PciHotPlugInit.h" />
+    <ClInclude Include="Include\Protocol\PciHotPlugRequest.h" />
+    <ClInclude Include="Include\Protocol\PciIo.h" />
+    <ClInclude Include="Include\Protocol\PciOverride.h" />
+    <ClInclude Include="Include\Protocol\PciPlatform.h" />
+    <ClInclude Include="Include\Protocol\PciRootBridgeIo.h" />
+    <ClInclude Include="Include\Protocol\PiPcd.h" />
+    <ClInclude Include="Include\Protocol\PlatformDriverOverride.h" />
+    <ClInclude Include="Include\Protocol\PlatformToDriverConfiguration.h" />
+    <ClInclude Include="Include\Protocol\PxeBaseCode.h" />
+    <ClInclude Include="Include\Protocol\PxeBaseCodeCallBack.h" />
+    <ClInclude Include="Include\Protocol\RealTimeClock.h" />
+    <ClInclude Include="Include\Protocol\ReportStatusCodeHandler.h" />
+    <ClInclude Include="Include\Protocol\Reset.h" />
+    <ClInclude Include="Include\Protocol\Runtime.h" />
+    <ClInclude Include="Include\Protocol\S3SaveState.h" />
+    <ClInclude Include="Include\Protocol\S3SmmSaveState.h" />
+    <ClInclude Include="Include\Protocol\ScsiIo.h" />
+    <ClInclude Include="Include\Protocol\ScsiPassThru.h" />
+    <ClInclude Include="Include\Protocol\ScsiPassThruExt.h" />
+    <ClInclude Include="Include\Protocol\SectionExtraction.h" />
+    <ClInclude Include="Include\Protocol\Security.h" />
+    <ClInclude Include="Include\Protocol\SecurityPolicy.h" />
+    <ClInclude Include="Include\Protocol\SerialIo.h" />
+    <ClInclude Include="Include\Protocol\ServiceBinding.h" />
+    <ClInclude Include="Include\Protocol\SimpleFileSystem.h" />
+    <ClInclude Include="Include\Protocol\SimpleNetwork.h" />
+    <ClInclude Include="Include\Protocol\SimplePointer.h" />
+    <ClInclude Include="Include\Protocol\SimpleTextIn.h" />
+    <ClInclude Include="Include\Protocol\SimpleTextInEx.h" />
+    <ClInclude Include="Include\Protocol\SimpleTextOut.h" />
+    <ClInclude Include="Include\Protocol\Smbios.h" />
+    <ClInclude Include="Include\Protocol\SmbusHc.h" />
+    <ClInclude Include="Include\Protocol\SmmAccess.h" />
+    <ClInclude Include="Include\Protocol\SmmAccess2.h" />
+    <ClInclude Include="Include\Protocol\SmmBase.h" />
+    <ClInclude Include="Include\Protocol\SmmBase2.h" />
+    <ClInclude Include="Include\Protocol\SmmCommunication.h" />
+    <ClInclude Include="Include\Protocol\SmmConfiguration.h" />
+    <ClInclude Include="Include\Protocol\SmmControl.h" />
+    <ClInclude Include="Include\Protocol\SmmControl2.h" />
+    <ClInclude Include="Include\Protocol\SmmCpu.h" />
+    <ClInclude Include="Include\Protocol\SmmCpuIo.h" />
+    <ClInclude Include="Include\Protocol\SmmCpuIo2.h" />
+    <ClInclude Include="Include\Protocol\SmmCpuSaveState.h" />
+    <ClInclude Include="Include\Protocol\SmmGpiDispatch.h" />
+    <ClInclude Include="Include\Protocol\SmmGpiDispatch2.h" />
+    <ClInclude Include="Include\Protocol\SmmIchnDispatch.h" />
+    <ClInclude Include="Include\Protocol\SmmIoTrapDispatch2.h" />
+    <ClInclude Include="Include\Protocol\SmmPciRootBridgeIo.h" />
+    <ClInclude Include="Include\Protocol\SmmPeriodicTimerDispatch.h" />
+    <ClInclude Include="Include\Protocol\SmmPeriodicTimerDispatch2.h" />
+    <ClInclude Include="Include\Protocol\SmmPowerButtonDispatch.h" />
+    <ClInclude Include="Include\Protocol\SmmPowerButtonDispatch2.h" />
+    <ClInclude Include="Include\Protocol\SmmReadyToLock.h" />
+    <ClInclude Include="Include\Protocol\SmmReportStatusCodeHandler.h" />
+    <ClInclude Include="Include\Protocol\SmmStandbyButtonDispatch.h" />
+    <ClInclude Include="Include\Protocol\SmmStandbyButtonDispatch2.h" />
+    <ClInclude Include="Include\Protocol\SmmStatusCode.h" />
+    <ClInclude Include="Include\Protocol\SmmSwDispatch.h" />
+    <ClInclude Include="Include\Protocol\SmmSwDispatch2.h" />
+    <ClInclude Include="Include\Protocol\SmmSxDispatch.h" />
+    <ClInclude Include="Include\Protocol\SmmSxDispatch2.h" />
+    <ClInclude Include="Include\Protocol\SmmUsbDispatch.h" />
+    <ClInclude Include="Include\Protocol\SmmUsbDispatch2.h" />
+    <ClInclude Include="Include\Protocol\StatusCode.h" />
+    <ClInclude Include="Include\Protocol\StorageSecurityCommand.h" />
+    <ClInclude Include="Include\Protocol\SuperIo.h" />
+    <ClInclude Include="Include\Protocol\TapeIo.h" />
+    <ClInclude Include="Include\Protocol\TcgService.h" />
+    <ClInclude Include="Include\Protocol\Tcp4.h" />
+    <ClInclude Include="Include\Protocol\Tcp6.h" />
+    <ClInclude Include="Include\Protocol\Timer.h" />
+    <ClInclude Include="Include\Protocol\Udp4.h" />
+    <ClInclude Include="Include\Protocol\Udp6.h" />
+    <ClInclude Include="Include\Protocol\UgaDraw.h" />
+    <ClInclude Include="Include\Protocol\UgaIo.h" />
+    <ClInclude Include="Include\Protocol\UnicodeCollation.h" />
+    <ClInclude Include="Include\Protocol\Usb2HostController.h" />
+    <ClInclude Include="Include\Protocol\UsbHostController.h" />
+    <ClInclude Include="Include\Protocol\UsbIo.h" />
+    <ClInclude Include="Include\Protocol\UserCredential.h" />
+    <ClInclude Include="Include\Protocol\UserCredential2.h" />
+    <ClInclude Include="Include\Protocol\UserManager.h" />
+    <ClInclude Include="Include\Protocol\Variable.h" />
+    <ClInclude Include="Include\Protocol\VariableWrite.h" />
+    <ClInclude Include="Include\Protocol\VlanConfig.h" />
+    <ClInclude Include="Include\Protocol\WatchdogTimer.h" />
+    <ClInclude Include="Include\Uefi.h" />
+    <ClInclude Include="Include\Uefi\UefiAcpiDataTable.h" />
+    <ClInclude Include="Include\Uefi\UefiBaseType.h" />
+    <ClInclude Include="Include\Uefi\UefiGpt.h" />
+    <ClInclude Include="Include\Uefi\UefiInternalFormRepresentation.h" />
+    <ClInclude Include="Include\Uefi\UefiMultiPhase.h" />
+    <ClInclude Include="Include\Uefi\UefiPxe.h" />
+    <ClInclude Include="Include\Uefi\UefiSpec.h" />
+    <ClInclude Include="Include\X64\ProcessorBind.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="depex.txt" />
+    <None Include="ffs_compressed.txt" />
+    <None Include="ffs_uncompressed.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
