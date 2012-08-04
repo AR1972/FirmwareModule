@@ -13,8 +13,15 @@
 #include <Guid\Acpi.h>
 #include "main.h"
 //
-#define PATCH_TABLES 0		// copy OemId + OemTableId from SLIC to RSDP, RSDT, XSDT
-#define SLP_INJECT 1		// copy SLP 1.0 string to legacy memory region
+// 0 = do not touch (some firmware's update OemId's & OemTableId's automatically)
+// 1 = copy OemId + OemTableId from SLIC to RSDP, RSDT, XSDT
+// 2 = copy OemId + OemTableId from SLIC to all ACPI tables
+//
+#define PATCH_TABLES 0
+//
+// 1 = copy SLP 1.0 string to legacy memory region
+//
+#define SLP_INJECT 1
 //
 INTN
 CompareMem (
@@ -231,7 +238,10 @@ VOID
 	//
 	Data = 1;
 	Size = sizeof(Data);
-	RS->SetVariable(FailSafeName, &FailSafeGuid, Attributes, Size, &Data); // set failsafe byte to 1, if main fails to complete the module will be disabled
+	//
+	// set failsafe byte to 1, if main fails to complete the module will be disabled
+	//
+	RS->SetVariable(FailSafeName, &FailSafeGuid, Attributes, Size, &Data);
 	//
 	SlicTable = (SlicTbl_t *) SLIC;
 	//
@@ -371,7 +381,10 @@ VOID
 #endif
 	Data = 0;
 	Size = sizeof(Data);
-	RS->SetVariable(FailSafeName, &FailSafeGuid, Attributes, Size, &Data); // set failsafe byte to 0
+	//
+	// set failsafe byte to 0
+	//
+	RS->SetVariable(FailSafeName, &FailSafeGuid, Attributes, Size, &Data);
 	return;
 }
 //
@@ -385,7 +398,9 @@ EFI_STATUS
 	ST = SystemTable;
 	BS = ST->BootServices;
 	RS = ST->RuntimeServices;
+	//
 	// disable the module if failsafe byte is set to 1
+	//
 	RS->GetVariable(FailSafeName, &FailSafeGuid, &Attributes, &Size, &Data);
 	if(Data == 0) {
 		Status =  BS->CreateEventEx(EVT_NOTIFY_SIGNAL, TPL_NOTIFY, Main, NULL, &EventReadyToBootGuid, &EventReadyToBoot);
