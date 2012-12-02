@@ -68,7 +68,7 @@
       <Command>COPY /Y "$(ProjectDir)ASUS.BIN" "$(SolutionDir)$(Configuration)\ASUS.BIN"
 COPY /Y "$(ProjectDir)ASUS.XRM-MS" "$(SolutionDir)$(Configuration)\ASUS.XRM-MS"
 COPY /Y "$(ProjectDir)InstallData.cmd" "$(SolutionDir)$(Configuration)\InstallData.cmd"
-COPY /Y "$(SolutionDir)README.TXT" "$(SolutionDir)$(Configuration)\README.TXT"</Command>
+COPY /Y "$(SolutionDir)README.MD" "$(SolutionDir)$(Configuration)\README.TXT"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
