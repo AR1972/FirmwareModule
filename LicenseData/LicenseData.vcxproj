@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
@@ -25,6 +25,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -66,7 +67,6 @@
     </ManifestResourceCompile>
     <PostBuildEvent>
       <Command>COPY /Y "$(ProjectDir)ASUS.BIN" "$(SolutionDir)$(Configuration)\ASUS.BIN"
-COPY /Y "$(ProjectDir)ASUS.XRM-MS" "$(SolutionDir)$(Configuration)\ASUS.XRM-MS"
 COPY /Y "$(ProjectDir)InstallData.cmd" "$(SolutionDir)$(Configuration)\InstallData.cmd"
 COPY /Y "$(SolutionDir)README.MD" "$(SolutionDir)$(Configuration)\README.TXT"</Command>
     </PostBuildEvent>
@@ -87,7 +87,6 @@ COPY /Y "$(SolutionDir)README.MD" "$(SolutionDir)$(Configuration)\README.TXT"</C
   </ItemGroup>
   <ItemGroup>
     <None Include="ASUS.BIN" />
-    <None Include="ASUS.XRM-MS" />
     <None Include="InstallData.cmd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

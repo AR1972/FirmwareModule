@@ -222,7 +222,7 @@ VOID
 	EFI_LEGACY_BIOS_PROTOCOL *LegacyBiosProtocol = 0;
 	UINT64 Handel = 0;
 	UINTN DataSize = 0;
-	EFI_TPL OldTpl;
+	//EFI_TPL OldTpl;
 	EFI_STATUS Status = EFI_UNSUPPORTED;
 	Rsdp20Tbl_t *RsdpTable = 0;
 	Rsdp20Tbl_t *LegacyRsdpTable = 0;

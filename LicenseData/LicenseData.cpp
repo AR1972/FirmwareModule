@@ -82,10 +82,10 @@ int _tmain(int argc, _TCHAR* argv[])
 		wcout << L"out of memory\n";
 		goto Exit;
 	}
-	StringFromGUID2(MarkerGuid, markerguid, MAX_PATH);
-	StringFromGUID2(PublicKeyGuid, publickeyguid, MAX_PATH);
-	StringFromGUID2(SlpGuid, slpguid, MAX_PATH);
-	StringFromGUID2(FailSafeGuid, failsafeguid, MAX_PATH);
+	status = StringFromGUID2(MarkerGuid, markerguid, MAX_PATH);
+	status = StringFromGUID2(PublicKeyGuid, publickeyguid, MAX_PATH);
+	status = StringFromGUID2(SlpGuid, slpguid, MAX_PATH);
+	status = StringFromGUID2(FailSafeGuid, failsafeguid, MAX_PATH);
 	//
 	hNtdll = LoadLibrary(L"ntdll.dll");
 	if(hNtdll != NULL) {

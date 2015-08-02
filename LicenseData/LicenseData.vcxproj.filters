@@ -39,6 +39,5 @@
   <ItemGroup>
     <None Include="InstallData.cmd" />
     <None Include="ASUS.BIN" />
-    <None Include="ASUS.XRM-MS" />
   </ItemGroup>
 </Project>
