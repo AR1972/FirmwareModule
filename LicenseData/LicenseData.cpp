@@ -7,6 +7,7 @@
 //
 #include "stdafx.h"
 #include "LicenseData.h"
+#include <VersionHelpers.h>
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -49,15 +50,29 @@ BOOL
 	return TRUE;
 }
 //
-BOOL 
-	isEfi()
+BOOL
+isEfi(VOID)
 {
-	UINT ret = FALSE;
-	DWORD buffer[5] = {};
-	if (pNtQuerySystemInformation((SYSTEM_INFORMATION_CLASS)90, buffer, sizeof(buffer), NULL) == 0 && buffer[4] == 2) {
-		ret = TRUE;
+	BOOL RetVal = FALSE;
+	DWORD dwPInfo = NULL;
+	DWORD dwVersion = NULL;
+	DWORD dwMajorVersion = NULL;
+	DWORD dwMinorVersion = NULL;
+	dwVersion = GetVersion();
+	dwMajorVersion = (DWORD)(LOBYTE(LOWORD(dwVersion)));
+	dwMinorVersion = (DWORD)(HIBYTE(LOWORD(dwVersion)));
+	if (dwMajorVersion == 6 || dwMinorVersion == 1) {
+		DWORD buffer[5] = {};
+		if (pNtQuerySystemInformation((SYSTEM_INFORMATION_CLASS)90, buffer, sizeof(buffer), NULL) == 0 && buffer[4] == 2) {
+			RetVal = TRUE;
+		}
 	}
-	return ret;
+	else if (IsWindows8OrGreater()) {
+		FIRMWARE_TYPE FirmwareType;
+		GetFirmwareType(&FirmwareType);
+		RetVal = FirmwareType == FirmwareTypeUefi;
+	}
+	return RetVal;
 }
 //
 int _tmain(int argc, _TCHAR* argv[])
